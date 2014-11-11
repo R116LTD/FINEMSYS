@@ -1,0 +1,59 @@
+@import "main-variables.scss";
+@media only screen and (max-device-width:768px) {
+  .navbar-right > li > .notifications {
+    .badge {
+      top:20px;
+    }
+  }
+
+  .summary .horizontal dt{
+    width:auto;
+    float:left;
+    min-width:40px !important;
+  }
+
+  .summary .horizontal dd {
+    float:left;
+    width:113px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+  
+  .navbar-toggle {
+    margin-top:12px;
+  }
+  .navbar-right > li > .notifications {
+    border:0 !important;
+    margin: 0;
+
+  }
+
+  .summary .horizontal dt {
+    min-width:60px;
+    padding: 0 5px;
+  }
+  .summary .horizontal dd {
+    margin-right:5px;
+    width:118px;
+  }
+  
+  .filters {
+    ul {
+      @include make-md-column(9);
+      @include make-sm-column(10);
+    }
+    ul>li>a {
+      font-size:11px;
+      padding:5px;
+    }
+    .search { 
+      @include make-md-column(3);
+      @include make-sm-column(2);
+
+      .search-box {
+        width:100%;
+      }
+    }
+  }
+}
+
