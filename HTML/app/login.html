@@ -15,70 +15,48 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    <!--[if lt IE 9]>
+    <!--[if lt IE 8]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body class="pre-login">
     <!--[if lt IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-  <!-- START: Bootstrap Fixed Header-->
-  <nav class="navbar" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" 
-            data-target="#main-navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#"><span>Finem</span></a>
-        <div class="visible-sm search-sm">
-          <form role="search">
-            <div class="form-group">
-              <input type="text" class="search-box" placeholder="Search Clients"/>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="main-nav collapse navbar-collapse" id="main-navbar-collapse">
-         <ul class="nav navbar-nav">
-           <li class="active"><a href="#" class="home">Home</a></li>
-           <li><a href="#" class="clients">Clients</a></li>
-           <li><a href="#" class="reports">Reports</a></li>
-           <li><a href="#" class="accounting">Accounting</a></li>
-           <li><a href="#" class="configuration">Configuration</a></li>
-         </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="hidden-sm">
-              <form role="search">
-               <div class="search">
-                 <input type="text" class="search-box" placeholder="Search Clients"/>
-               </div>
-              </form>
-            </li>
-            <li>
-              <a href="#" class="notifications">
-                <span class="visible-sm">Notifications</span>
-                <strong class="badge">15</strong>
-              </a>
-            </li>
-            <li class="dropdown" >
-              <a href="#" class="user dropdown-toggle" data-toggle="dropdown"><span class="name">Jesse</span><span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Change Password</a></li>
-                  <li><a href="#">Logout</a></li>
-                </ul>
-            </li>
-          </ul> 
+  <!-- START: LOGIN BOX-->
+  <div class="container">
+    <div class="wrap">
+      <div class="login-box" ng-controller="LoginCtrl">
+        <img src="../images/logo-big.png" title="Finem(U) Ltd."/>
+        <form name="loginForm" novalidate show-validation>
+          <legend>Please login to <strong>FINEM</strong> system</legend>
+          <div ng-include src="'/views/alert.html'"></div>
+          <div class="form-group has-error has-feedback">
+            <input ng-focus="clearError()" type="text" class="form-control" placeholder="Username" ng-model="loginDetails.username"
+                   name="username"
+                   ng-minlength="5"
+                   ng-maxlength="30" 
+                   required />
+            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+          </div>
+          <div class="form-group has-error has-feedback">
+            <input ng-focus="clearError()" type="password" class="form-control" placeholder="Password"
+                   autocorrect="off" autocapitalize="off" ng-model="loginDetails.password"
+                   name="password"
+                   ng-minlength="5"
+                   ng-maxlength="30"
+                   required />
+            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-block primary" ng-click="authenticate(loginDetails)">Login</button>
+          </div>
+        </form>
       </div>
     </div>
-  </nav>  <!-- END: Bootstrap Fixed Header-->
-
-
-
+  </div>
+  <!-- END: LOGIN BOX-->
+  
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->

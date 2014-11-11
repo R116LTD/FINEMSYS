@@ -21,6 +21,11 @@
   
   .navbar-toggle {
     margin-top:12px;
+    background: #424242 !important;
+
+    .icon-bar {
+      background: #ffffff !important;
+    }
   }
   .navbar-right > li > .notifications {
     border:0 !important;
