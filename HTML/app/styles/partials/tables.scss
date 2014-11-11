@@ -27,6 +27,7 @@
   .status {
     font-weight:500;
     font-size:11px;
+    white-space: nowrap;
     &:before {
       content: '\2022';
       font-size: 39px;

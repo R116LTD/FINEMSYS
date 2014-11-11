@@ -1,0 +1,346 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Finem - Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <!-- START: Global Navigation-->
+  <nav class="navbar" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" 
+            data-target="#main-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><span>Finem</span></a>
+        <div class="visible-sm search-sm">
+          <form role="search">
+            <div class="form-group">
+              <input type="text" class="search-box" placeholder="Search Clients"/>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="main-nav collapse navbar-collapse" id="main-navbar-collapse">
+         <ul class="nav navbar-nav">
+           <li class="active"><a href="#" class="home">Home</a></li>
+           <li><a href="#" class="clients">Clients</a></li>
+           <li><a href="#" class="reports">Reports</a></li>
+           <li><a href="#" class="accounting">Accounting</a></li>
+           <li><a href="#" class="configuration">Configuration</a></li>
+         </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="hidden-sm">
+              <form role="search">
+               <div class="search">
+                 <input type="text" class="search-box" placeholder="Search Clients"/>
+               </div>
+              </form>
+            </li>
+            <li>
+              <a href="#" class="notifications">
+                <span class="visible-sm">Notifications</span>
+                <strong class="badge">15</strong>
+              </a>
+            </li>
+            <li class="dropdown" >
+              <a href="#" class="user dropdown-toggle" data-toggle="dropdown"><span class="name">Jesse</span><span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Change Password</a></li>
+                  <li><a href="#">Logout</a></li>
+                </ul>
+            </li>
+          </ul> 
+      </div>
+    </div>
+  </nav>  
+  <!-- END: Global Navigation-->
+  
+  <!-- START: CLIENTS -->
+  <div class="container post-login">
+    <div class="page-header">
+      <div class="header">
+        <h3>Clients</h3>
+        <div class="action">
+          <button class="btn primary">Create Client</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="filters">
+      <ul role="tablist">
+        <li role="presentation"><a href="#" class="active">Clients</a></li>
+        <li role="presentation"><a href="#">Loans</a></li>
+        <li role="presentation"><a href="#">Loans Pending Approval</a></li>
+        <li role="presentation"><a href="#">Loans Awaiting Disbursement</a></li>
+        <li role="presentation"><a href="#">Loans Rejected</a></li>
+        <li role="presentation"><a href="#">Loans Written-Off</a></li>
+      </ul>
+  
+      <div class="search">
+        <input type="text" class="search-box" placeholder="Search Clients">
+      </div>
+    </div>
+  
+    <div class="list">
+      <table class="table">
+        <col width="50" class="hidden-sm"></col>
+        <col/>
+        <col/>
+        <col/>
+        <col/>
+        <col/>
+        <col/>
+        <col/>
+        <thead>
+          <tr>
+            <th class="hidden-sm">&nbsp;</th>
+            <th>Client Details</th>
+            <th>Client Status</th>
+            <th>Loan Status</th>
+            <th>Education</th>
+            <th>Povert Level</th>
+            <th>Loan Officer</th>
+            <th>&nbsp;</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="hidden-sm">
+                <img src="http://placehold.it/50x50"/>
+            </td>
+            <td>
+                <div class="name">
+                  <a href="#">Stephen Sandoval</a>
+                </div>
+                <div class="meta activity">
+                  Retailer
+                </div>
+                <div class="meta">
+                  File No.: 6743
+                </div>
+            </td>
+            <td>
+              <span class="status active">
+                ACTIVE
+              </span>
+            </td>
+            <td>&nbsp;</td>
+            <td>Bachelors</td>
+            <td>500,000 - 1,000,000</td>
+            <td>&nbsp;</td>
+            <td>
+              <button class="btn grid-button">Create Loan</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="hidden-sm">
+                <img src="http://placehold.it/50x50"/>
+            </td>
+            <td>
+                <div class="name">
+                  <a href="#">Ryan Bradley</a>
+                </div>
+                <div class="meta activity">
+                  Retailer
+                </div>
+                <div class="meta">
+                  File No.: 6743
+                </div>
+            </td>
+            <td>
+              <span class="status active">
+                ACTIVE
+              </span>
+            </td>
+            <td>
+              <span class="status bad">
+                IN BAD STANDING
+              </span>
+            </td>
+            <td>O Level</td>
+            <td>500,000 - 1,000,000</td>
+            <td>Peter Simpson</td>
+            <td>&nbsp;</td>
+          </tr>
+  
+          <tr>
+            <td class="hidden-sm">
+                <img src="http://placehold.it/50x50"/>
+            </td>
+            <td>
+                <div class="name">
+                  <a href="#">Ryan Bradley</a>
+                </div>
+                <div class="meta activity">
+                  Retailer
+                </div>
+                <div class="meta">
+                  File No.: 6743
+                </div>
+            </td>
+            <td>
+              <span class="status closed">
+                LEFT PROGRAM
+              </span>
+            </td>
+            <td>&nbsp;</td>
+            <td>O Level</td>
+            <td>500,000 - 1,000,000</td>
+            <td>Peter Simpson</td>
+            <td>
+              <button class="btn grid-button">Create Loan</button>
+            </td>
+          </tr>
+  
+          <tr>
+            <td class="hidden-sm">
+                <img src="http://placehold.it/50x50"/>
+            </td>
+            <td>
+                <div class="name">
+                  <a href="#">Ryan Bradley</a>
+                </div>
+                <div class="meta activity">
+                  Retailer
+                </div>
+                <div class="meta">
+                  File No.: 6743
+                </div>
+            </td>
+            <td>
+              <span class="status closed">
+                BLACKLISTED
+              </span>
+            </td>
+            <td>&nbsp;</td>
+            <td>O Level</td>
+            <td>500,000 - 1,000,000</td>
+            <td>Peter Simpson</td>
+            <td>&nbsp;</td>
+          </tr>
+  
+          <tr>
+            <td class="hidden-sm">
+                <img src="http://placehold.it/50x50"/>
+            </td>
+            <td>
+                <div class="name">
+                  <a href="#">Ryan Bradley</a>
+                </div>
+                <div class="meta activity">
+                  Retailer
+                </div>
+                <div class="meta">
+                  File No.: 6743
+                </div>
+            </td>
+            <td>
+              <span class="status active">
+                ACTIVE
+              </span>
+            </td>
+            <td>
+              <span class="status on-hold">
+                ON HOLD
+              </span>
+            </td>
+            <td>O Level</td>
+            <td>500,000 - 1,000,000</td>
+            <td>Peter Simpson</td>
+            <td>&nbsp;</td>
+          </tr>
+  
+        </tbody>
+      </table>
+      <div class="table-footer">
+        <div class="export">
+          <strong>Export: <a class="link pdf" href="#">PDF</a><a class="link excel" href="#">Excel</a><a class="link copy" href="#">Copy</a>
+        </div>
+        <div class="paginate">
+            <ul class="pagination">
+              <li class="disabled"><a href="#">&laquo;</a></li>
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">&raquo;</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END: CLIENTS -->
+
+  <!-- START: FOOTER -->
+  <div class="footer">
+    <div class="container">
+        &copy; Copyright 2014-2015, Finem (U) Pvt. Ltd. 
+    </div>
+  </div>
+  <!-- END: FOOTER -->
+
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
