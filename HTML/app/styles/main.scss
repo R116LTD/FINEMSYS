@@ -1,5 +1,7 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
-@import "main-variables.scss";
-@import "main-web.scss";
-@import "main-tablet.scss";
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap/_mixins.scss";
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap/_utilities.scss";
+@import "_main-variables.scss";
+@import "_main-web.scss";
+@import "_main-tablet.scss";
